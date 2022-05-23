@@ -26,17 +26,9 @@ function GenLicenseKey(){
     let str5 = "";
     for (i = 0; i < 5; i++){
         str1 = str1 + chars[Math.floor(Math.random() * chars.length)];
-    }
-    for (i = 0; i < 5; i++){
         str2 = str2 + chars[Math.floor(Math.random() * chars.length)];
-    }
-    for (i = 0; i < 5; i++){
         str3 = str3 + chars[Math.floor(Math.random() * chars.length)];
-    }
-    for (i = 0; i < 5; i++){
         str4 = str4 + chars[Math.floor(Math.random() * chars.length)];
-    }
-    for (i = 0; i < 5; i++){
         str5 = str5 + chars[Math.floor(Math.random() * chars.length)];
     }
     str = str1 + "-" + str2 + "-" + str3 + "-" + str4 + "-" + str5;
