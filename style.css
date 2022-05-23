@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap%");
+
 body{
     background-color: #141414;
     color: white;
+    font-family: 'Itim', sans-serif;
 }
 
 h1,#title{
     text-align: center;
-    font-family: cursive;
 }
 
 p,#keylist{
@@ -20,7 +22,6 @@ p,#keylist{
     margin-top: 1em;
     display: block;
 
-    font-family: cursive;
 }
 
 select,#num{
@@ -37,7 +38,6 @@ select,#num{
     color: white;
     border:  solid 1px rgb(120, 0, 0);
 
-    font-family: cursive;
 }
 
 button{
@@ -58,7 +58,6 @@ button{
     border:  solid 1px rgb(120, 0, 0);
 
     text-align: center;
-    font-family: cursive;
 }
 
 button:first-child{
