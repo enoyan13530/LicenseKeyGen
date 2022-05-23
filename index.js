@@ -1,11 +1,19 @@
 let button = document.getElementById("gen-button");
 let keylist = document.getElementById("keylist");
+let select = document.getElementById("num");
 let chars = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9"]
 
 button.addEventListener("click", OutputLicenseKey)
 
 function OutputLicenseKey(event){
-    keylist.innerText = GenLicenseKey();
+    let num = select.value;
+    let i;
+    let str = "";
+    for (i = 0; i < num; i++){
+        str += GenLicenseKey();
+        str += "\n";
+    }
+    keylist.innerText = str;
 }
 
 function GenLicenseKey(){
