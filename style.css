@@ -64,3 +64,9 @@ button:first-child{
     outline: 0;
     border: solid 1px white;
 }
+
+@media screen and (max-width:480px) {
+    p,#keylist{
+        width: 355px;
+    }
+}
