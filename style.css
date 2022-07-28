@@ -10,7 +10,7 @@ h1,#title{
     text-align: center;
 }
 
-p,#keylist{
+p, #keylist{
     width: 800px;
     height: 465px;
     border: solid 1px rgb(120, 0, 0);
@@ -63,6 +63,22 @@ button{
 button:first-child{
     outline: 0;
     border: solid 1px white;
+}
+
+div, #toast{
+    background-color:rgb(21, 170, 21);
+
+    width: 240px;
+    height: 80px;
+
+    display: flex;
+    visibility: hidden;
+}
+p, #toast-text{
+    border: none;
+    text-align: left;
+    width: 240px;
+    height: 80px;
 }
 
 @media screen and (max-width:480px) {

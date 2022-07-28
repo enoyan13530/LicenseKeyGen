@@ -1,6 +1,8 @@
 let button = document.getElementById("gen-button");
 let keylist = document.getElementById("keylist");
 let select = document.getElementById("num");
+let toast = document.getElementById("toast");
+let toast_text = document.getElementById("toast-text");
 let chars = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9"]
 
 button.addEventListener("click", OutputLicenseKey)
@@ -13,6 +15,7 @@ function OutputLicenseKey(event){
         str += GenLicenseKey();
         str += "\n";
     }
+    //showToast(i + "個出力")
     keylist.innerText = str;
 }
 
@@ -33,4 +36,14 @@ function GenLicenseKey(){
     }
     str = str1 + "-" + str2 + "-" + str3 + "-" + str4 + "-" + str5;
     return str;
+}
+
+function showToast(text){
+    toast_text.innerText = text;
+    toast.style.visibility = "visible";
+
+    setTimeout( function() {
+        toast_text.innerText = "";
+        toast.style.visibility = "hidden";
+    }, 1500)
 }
